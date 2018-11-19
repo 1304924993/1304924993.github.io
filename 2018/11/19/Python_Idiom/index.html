@@ -1,122 +1,170 @@
-<!doctype html>
-<html lang="">
-  <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta content="black" name="apple-mobile-web-app-status-bar-style">
-  <meta content="telephone=no" name="format-detection">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <meta name="author" content="John Doe">
-
-  
-  <title>齐天大力士</title>
-  
-
-  <link rel="alternate" href="/atom.xml" title="齐天大力士" type="application/atom+xml">
-  <link rel="canonical" href="http://yoursite.com/2018/11/19/Python_Idiom/index.html">
-  <link rel="shortcut icon" href="/">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="">
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Python惯例“惯例”这个词指的是“习惯的做法，常规的办法，一贯的做法”，与这个词对应的英文单词叫“idiom”。由于Python跟其他很多编程语言在语法和使用上还是有比较显著的差别，因此作为一个Python开发者如果不能掌握这些惯例，就无法写出“Pythonic”的代码。下面我们总结了一些在Python开发中的惯用的代码。  让代码既可以被导入又可以被执行。 12if __name__ ==">
+<meta property="og:type" content="article">
+<meta property="og:title" content="齐天大力士">
+<meta property="og:url" content="http://yoursite.com/2018/11/19/Python_Idiom/index.html">
+<meta property="og:site_name" content="齐天大力士">
+<meta property="og:description" content="Python惯例“惯例”这个词指的是“习惯的做法，常规的办法，一贯的做法”，与这个词对应的英文单词叫“idiom”。由于Python跟其他很多编程语言在语法和使用上还是有比较显著的差别，因此作为一个Python开发者如果不能掌握这些惯例，就无法写出“Pythonic”的代码。下面我们总结了一些在Python开发中的惯用的代码。  让代码既可以被导入又可以被执行。 12if __name__ ==">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-19T06:11:00.836Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="齐天大力士">
+<meta name="twitter:description" content="Python惯例“惯例”这个词指的是“习惯的做法，常规的办法，一贯的做法”，与这个词对应的英文单词叫“idiom”。由于Python跟其他很多编程语言在语法和使用上还是有比较显著的差别，因此作为一个Python开发者如果不能掌握这些惯例，就无法写出“Pythonic”的代码。下面我们总结了一些在Python开发中的惯用的代码。  让代码既可以被导入又可以被执行。 12if __name__ ==">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>齐天大力士</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+    <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+    <!-- jquery -->
+    <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
-
-  <body>
-    <aside class="aside">
-  <nav class="aside-menu">
-    <ul class="aside-list">
-      
-        
-        <li class="aside-item"><i class="aside-menu-icon iconfont icon-wendang"></i><a href="/index.html" class="aside-menu-link" title="Home">Home</a></li>
-        
-      
-        
-        <li class="aside-item"><i class="aside-menu-icon iconfont icon-wendang1"></i><a href="/archives/index.html" class="aside-menu-link" title="Archives">Archives</a></li>
-        
-      
-        
-        <li class="aside-item"><i class="aside-menu-icon iconfont icon-biaoqian1"></i><a href="/tags/index.html" class="aside-menu-link" title="Tags">Tags</a></li>
-        
-      
-        
-        <li class="aside-item"><i class="aside-menu-icon iconfont icon-lianjie"></i><a href="/links/index.html" class="aside-menu-link" title="Links">Links</a></li>
-        
-      
-        
-        <li class="aside-item"><i class="aside-menu-icon iconfont icon-guanyu"></i><a href="/about/index.html" class="aside-menu-link" title="About">About</a></li>
-        
-      
-        
-        <li class="aside-item"><i class="aside-menu-icon iconfont icon-rss"></i><a href="/atom.xml" class="aside-menu-link" title="RSS">RSS</a></li>
-        
-      
-    </ul>
-  </nav>
-
-  <article class="aside-show">
-    
-      <form class="search-from" id="search-from">
-  <input class="search-text" id="search-text" type="text" name="searchText" value="" autocomplete="off">
-  <button class="search-btn" id="search-btn" type="button"><i class="search-btn-icon iconfont icon-sousuo-sousuo"></i></button>
-</form>
-
-      <article class="search-data" id="search-data">
-  <button class="search-close" id="search-close"><i class="search-close-icon iconfont icon-houdongfangiconfont10"></i></button>
-
-  <div class="search-wrapper" id="search-wrapper"></div>
-</article>
-
-    
-    <div class="aside-show-wrapper">
-      <figure class="aside-avatar">
-        <img src="/img/avatar.png" alt="avatar" class="aside-avatar-img">
-        <figcaption class="aside-avatar-caption">
-          晨风明悟
-          
-          <strong class="aside-avatar-STRONG">个人博客</strong>
-          
-        </figcaption>
-      </figure>
-      <p class="aside-show-description">观诸次为道，存神于想思。</p>
-      <ul class="aside-show-info">
-        <li class="aside-show-item">
-          <a href="javascript: void(0);" class="aside-show-link" title="微信" target="_blank"><i class="aside-show-icon iconfont icon-iconfontweixin"></i></a>
-          <div class="aside-show-outside aside-show-outside_1">
-            <img class="aside-show-IMG aside-show-IMG_1" src="/img/weixin.png" alt="微信">
-          </div>
-        </li>
-        <li class="aside-show-item"><a href="https://www.zhihu.com/people/chenfengmingwu/activities" class="aside-show-link" title="知乎" target="_blank"><i class="aside-show-icon iconfont icon-zhihu"></i></a></li>
-        <li class="aside-show-item"><a href="https://github.com/Sam618" class="aside-show-link" title="github" target="_blank"><i class="aside-show-icon iconfont icon-github"></i></a></li>
-        <li class="aside-show-item">
-          <a href="javascript: void(0);" class="aside-show-link" title="QQ" target="_blank"><i class="aside-show-icon iconfont icon-qq"></i></a>
-          <div class="aside-show-outside">
-            <img class="aside-show-IMG" src="/img/qq.png" alt="QQ">
-          </div>
-        </li>
-      </ul>
+<body>
+    <div class="banner">
+<div id="blogtitel" class="blogtitel">齐天大力士</div>
+<ul id="wrapper" class="wrapper">
+  <div class="sun">
+    <div class="star"></div>
+  </div>
+  <div class="mercury">
+    <div class="planet">
+      <div class="shadow"></div>
     </div>
-  </article>
-</aside>
+  </div>
+  <div class="venus">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="earth">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="mars">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="jupiter">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+</ul>
+</div>
+
+    <div class="background">
+      
+        <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/home/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/tzvetkov75">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2018/11/19/hello-world/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$("#i-next").toggle();" onmouseout="$("#i-next").toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$("#i-top").toggle();" onmouseout="$("#i-top").toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$("#i-share").toggle();" onmouseout="$("#i-share").toggle();" onclick="$("#share").toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/11/19/Python_Idiom/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/11/19/Python_Idiom/&text="><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/11/19/Python_Idiom/&is_video=false&description="><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=&body=Check out this article: http://yoursite.com/2018/11/19/Python_Idiom/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/11/19/Python_Idiom/&name=&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Python惯例"><span class="toc-number">1.</span> <span class="toc-text">Python惯例</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+      
+      <div class="content index width mx-auto px2 my4">
+          
+          <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        
+    </h1>
 
 
-    <article class="main" id="main">
-      <article class="post min-height">
-  
-  <header class="post-header">
-    
-    <h1 class="post-title"></h1>
-    <p class="post-meta">
-      <span class="post-time">2018-11-19</span>
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">齐天大力士</span>
+      </span>
       
+    <div class="postdate">
+        <time datetime="2018-11-19T06:11:00.836Z" itemprop="datePublished">2018-11-19</time>
+    </div>
+
+
       
-    </p>
-    
+
+    </div>
   </header>
-  <div class="post-content"><h2 id="Python惯例"><a href="#Python惯例" class="headerlink" title="Python惯例"></a>Python惯例</h2><p>“惯例”这个词指的是“习惯的做法，常规的办法，一贯的做法”，与这个词对应的英文单词叫“idiom”。由于Python跟其他很多编程语言在语法和使用上还是有比较显著的差别，因此作为一个Python开发者如果不能掌握这些惯例，就无法写出“Pythonic”的代码。下面我们总结了一些在Python开发中的惯用的代码。</p>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="Python惯例"><a href="#Python惯例" class="headerlink" title="Python惯例"></a>Python惯例</h2><p>“惯例”这个词指的是“习惯的做法，常规的办法，一贯的做法”，与这个词对应的英文单词叫“idiom”。由于Python跟其他很多编程语言在语法和使用上还是有比较显著的差别，因此作为一个Python开发者如果不能掌握这些惯例，就无法写出“Pythonic”的代码。下面我们总结了一些在Python开发中的惯用的代码。</p>
 <ol>
 <li><p>让代码既可以被导入又可以被执行。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br></pre></td></tr></table></figure>
@@ -174,50 +222,92 @@
 <blockquote>
 <p><strong>说明</strong>：这篇文章的内容来自于网络，有兴趣的读者可以阅读<a href="http://safehammad.com/downloads/python-idioms-2014-01-16.pdf" target="_blank" rel="noopener">原文</a>。</p>
 </blockquote>
-</div>
-    
-      <p class="post-copyright">若无特别说明，本文系原创，<a class="post-copyright-link" href="https://creativecommons.org/licenses/by/4.0/deed.zh" title="署名-非商业性使用 4.0 (CC BY-NC 4.0)" target="_blank">署名-非商业性使用 4.0 (CC BY-NC 4.0)</a>协议，转载文章请注明来自<a class="post-copyright-link" href="/" title="晨风明悟的个人博客" target="_blank">晨风明悟的个人博客</a>，或链接上原文地址：<a class="post-copyright-link" href="http://yoursite.com/2018/11/19/Python_Idiom/" title="http://yoursite.com/2018/11/19/Python_Idiom/" target="_blank">http://yoursite.com/2018/11/19/Python_Idiom/</a></p>
 
-      
-        
-<article class="comments">
-  <div id="SOHUCS" sid=""></div>
-  <script type="text/javascript">
-  	( function () {
-  		var appid = "cysXoaLrO",
-  		    conf = "d728bfac2289e4139bef3956efe4401f",
-      		width = window.innerWidth || document.documentElement.clientWidth;
-
-  		if ( width < 960 ) {
-    		window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    } )();
-  </script>
-  <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  </div>
 </article>
 
 
-      
-      <div class="toc-wrapper">
-        <div class="toc-scroll">
-          <div class="toc-middle">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Python惯例"><span class="toc-text">Python惯例</span></a></li></ol>
-          </div>
-        </div>
+
       </div>
-    
-  
-</article>
+      
+       <div id="footer-post-container">
+  <div id="footer-post">
 
-      <footer class="footer">
-  <p class="footer-text">驱动于 <a href="https://hexo.io/zh-cn/" class="footer-link" title="Hexo">Hexo</a>，主题由 <a href="/about" class="footer-link" title="晨风明悟">晨风明悟</a> 设计移植而来</p>
-  <p class="footer-text">&copy; 2016 - 2017 <a href="/about" class="footer-link" title="晨风明悟">晨风明悟</a> 保留部分版权</p>
-  <p class="footer-text">苏ICP备17019692号-1</p>
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/home/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/tzvetkov75">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Python惯例"><span class="toc-number">1.</span> <span class="toc-text">Python惯例</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/11/19/Python_Idiom/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/11/19/Python_Idiom/&text="><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/11/19/Python_Idiom/&is_video=false&description="><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=&body=Check out this article: http://yoursite.com/2018/11/19/Python_Idiom/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/11/19/Python_Idiom/&title="><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/11/19/Python_Idiom/&name=&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$("#toc-footer").toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$("#share-footer").toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$("#nav-footer").toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+      <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 John Doe
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/home/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/tzvetkov75">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
 </footer>
 
-    </article>
+      <script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
 
-    <script src="/js/to-top.js"></script>
-    <script src="/js/search.js"></script>
-  </body>
+<!-- Disqus Comments -->
+
+
+    </div>
+</body>
 </html>
