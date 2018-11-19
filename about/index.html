@@ -1,22 +1,187 @@
-extends includes/layout.pug
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
 
-block content
-  if page.type === 'tags'
-    .tag-cloud
-      .tag-cloud__title Tag
-        |  - 
-        span.tag-cloud__amount= site.tags.length
-      .tag-cloud-tags!= tagcloud({min_font: 14, max_font: 30, amount: 200, color: true, start_color: '#A4D8FA', end_color: '#2ac3ff'})
-  else if page.type === 'categories'
-    #post-content
-      .category
-        .category__title Category
-          |  - 
-          span.category__amount= site.categories.length
-        div!= list_categories()
-  else
-    article#page
-      h1= page.title
-      .article-container!= page.content
-  include includes/partial/page-nav.pug
+  
+  <title>about | 欢迎来到刘欣的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="薛之谦，1983年7月17日出生于上海市，中国内地男歌手、音乐制作人、演员、商人，毕业于格里昂酒店管理学院 。 2005年，因参加选秀节目《我型我秀》而正式出道。2006年6月9日，薛之谦发行首张个人原创同名专辑《薛之谦》；2007年，在中国原创音乐流行榜上凭借《认真的雪》获得内地金曲奖；2008年11月26日，发行第三张个人原创专辑《深深爱过你》；2015年6月10日，正式签约海蝶音乐公司，升为">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta property="og:site_name" content="欢迎来到刘欣的博客">
+<meta property="og:description" content="薛之谦，1983年7月17日出生于上海市，中国内地男歌手、音乐制作人、演员、商人，毕业于格里昂酒店管理学院 。 2005年，因参加选秀节目《我型我秀》而正式出道。2006年6月9日，薛之谦发行首张个人原创同名专辑《薛之谦》；2007年，在中国原创音乐流行榜上凭借《认真的雪》获得内地金曲奖；2008年11月26日，发行第三张个人原创专辑《深深爱过你》；2015年6月10日，正式签约海蝶音乐公司，升为">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-19T09:29:05.565Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="about">
+<meta name="twitter:description" content="薛之谦，1983年7月17日出生于上海市，中国内地男歌手、音乐制作人、演员、商人，毕业于格里昂酒店管理学院 。 2005年，因参加选秀节目《我型我秀》而正式出道。2006年6月9日，薛之谦发行首张个人原创同名专辑《薛之谦》；2007年，在中国原创音乐流行榜上凭借《认真的雪》获得内地金曲奖；2008年11月26日，发行第三张个人原创专辑《深深爱过你》；2015年6月10日，正式签约海蝶音乐公司，升为">
+  
+    <link rel="alternate" href="/atom.xml" title="欢迎来到刘欣的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">欢迎来到刘欣的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">思密达</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/about/index.html" class="article-date">
+  <time datetime="2018-11-19T08:36:36.000Z" itemprop="datePublished">2018-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      about
+    </h1>
+  
 
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>薛之谦，1983年7月17日出生于上海市，中国内地男歌手、音乐制作人、演员、商人，毕业于格里昂酒店管理学院 。</p>
+<p>2005年，因参加选秀节目《我型我秀》而正式出道。2006年6月9日，薛之谦发行首张个人原创同名专辑《薛之谦》；2007年，在中国原创音乐流行榜上凭借《认真的雪》获得内地金曲奖；2008年11月26日，发行第三张个人原创专辑《深深爱过你》；2015年6月10日，正式签约海蝶音乐公司，升为制作人。 2016年，凭借歌曲《演员》获得Music Radio年度金曲；同年，获得第二十届榜中榜“最受欢迎唱作歌手”；2017年，获得第7届全球流行音乐年度盛典年度最佳男歌手及MusicRadio榜中国TOP排行榜内地最佳男歌手；7月19日，获得亚洲金曲大赏年度内地最佳男歌手和现场人气王两个奖项。</p>
+<p>2018年4月15日，获第二十二届宝声音乐全球华语榜中榜暨亚洲影响力大典内地最佳男歌手、《渡》获榜中榜内地最佳专辑奖。6月8日，发行单曲《那是你离开了北京的生活》。7月22日，其加盟的明星舞蹈真人秀《新舞林大会》在东方卫视播出。</p>
+<p>2018年9月6日，薛之谦发博晒照，宣布升级为人父。 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/about/index.html" data-id="cjoo917oz00016gsyti2ffy1z" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/11/19/Python_Idiom/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/11/19/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
