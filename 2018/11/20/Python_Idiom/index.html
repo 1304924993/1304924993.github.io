@@ -116,7 +116,7 @@
     </div>
 
     <div class="post-meta">
-        <span class="attr">Post：<span>2018-11-20 20:10:09</span></span>
+        <span class="attr">Post：<span>2018-11-20 20:17:34</span></span>
         
         
         <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
@@ -126,28 +126,19 @@
     <div class="post-content ">
          <h2>Python之家</h2>
 
-<h3 id="Liunx系统的基础命令"><a href="#Liunx系统的基础命令" class="headerlink" title="Liunx系统的基础命令"></a>Liunx系统的基础命令</h3><p>“who - 查看登录系统用户的信息<br>last - 查看最近使用过系统的用户信息</p>
-<p>clear - 清除屏幕输出<br>history - 查看历史命令<br>!历史命令编号 - 重新执行历史命令</p>
+<h3 id="Liunx系统的基础命令"><a href="#Liunx系统的基础命令" class="headerlink" title="Liunx系统的基础命令"></a>Liunx系统的基础命令</h3><p>who - 查看登录系统用户的信息<br>last - 查看最近使用过系统的用户信息<br>clear - 清除屏幕输出<br>history - 查看历史命令<br>!历史命令编号 - 重新执行历史命令</p>
 <p>useradd/userdel - 添加/删除用户<br>passwd - 修改用户口令<br>su - switch user - 切换用户</p>
 <p>logout / exit - 退出登录<br>reboot / shutdown - 重启 / 关机<br>write 用户名 - 给指定用户发送消息<br>mesg y/n - 是否接收别人发送的消息<br>wall - 给所有人发出广播消息</p>
 <p>pwd - print working directory - 打印当前工作目录<br>cd - change directory - 改变目录<br>ls - list directory contents - 列出目录内容</p>
 <p>mkdir 目录名 - make directory - 创建文件夹<br>rmdir 目录名 - remove empty directory - 删除空文件夹<br>touch 文件名 - 创建一个空文件<br>echo 内容 &gt; 文件名 - 将内容重定向到指定的文件<br>wget [图片]<a href="http://www.sohu.com/" target="_blank" rel="noopener">http://www.sohu.com/</a> - 联网通过URL获取指定文件<br>rm - 删除文件<br>rm -rf - 删除文件夹<br>cp - 拷贝文件或文件夹<br>mv - 移动文件或文件夹（重命名 mv helloo.py hello.py）</p>
 <p>cat - concatenate - 连接文件内容（查看文件）<br>less / more - 分屏查看<br>head / tail - 查看文件前面/后面的部分<br>sort - 给文件排序<br>uniq - 去除相邻的重复内容<br>| - 管道 - 连接两个进程（命令）- 把前一个进程的输出作为后面一个进程的输入</p>
 <p>gzip / gunzip - 压缩/解压缩<br>xz -z / xz -d - 压缩/解压缩</p>
-<p>tar是Linux系统下的归档文件（类似于Windows下的rar文件）<br>解归档 - tar -xvf 归档文件的名字<br>归档 - tar -cvf 归档文件的名字 ./*</p>
-<p>Redis - NoSQL</p>
-<p>CPython - Python解释器是用C语言实现的<br>Jython - Python解释器是用Java语言实现的<br>IronPython - Python解释器是用C#语言实现的<br>PyPy - Python解释器是用Python语言实现的</p>
+<p>tar是Linux系统下的归档文件（类似于Windows下的rar文件）<br>解归档 - tar -xvf 归档文件的名字<br>归档 - tar -cvf 归档文件的名字 ./*<br>Redis - NoSQL<br>CPython - Python解释器是用C语言实现的<br>Jython - Python解释器是用Java语言实现的<br>IronPython - Python解释器是用C#语言实现的<br>PyPy - Python解释器是用Python语言实现的</p>
 <p>获得帮助<br>man - manual - 查看帮助手册<br>命令 –help - 获得命令的帮助”</p>
-<h3 id="Liunx系统安装软件"><a href="#Liunx系统安装软件" class="headerlink" title="Liunx系统安装软件"></a>Liunx系统安装软件</h3><p>“Linux系统安装软件：</p>
-<ol>
-<li>使用包管理工具 - yum / rpm / apt / deb</li>
-<li>源代码构建安装 - 下载源代码用C语言构建工具进行构建</li>
-<li>直接下载二进制程序 - 配置环境变量之后使用</li>
-</ol>
+<h3 id="Liunx系统安装软件"><a href="#Liunx系统安装软件" class="headerlink" title="Liunx系统安装软件"></a>Liunx系统安装软件</h3><p>“Linux系统安装软件：<br>使用包管理工具 - yum / rpm / apt / deb<br>源代码构建安装 - 下载源代码用C语言构建工具进行构建<br>直接下载二进制程序 - 配置环境变量之后使用</p>
 <p>Apache<br>Nginx —&gt; HTTP服务器 —&gt; 提供Web应用</p>
 <p>yum search nginx     - 搜索名为nginx的软件包<br>yum -y install nginx - 安装名为nginx的软件包<br>yum -y remove nginx  - 删除名为nginx的软件包<br>yum update nginx     - 更新名为nginx的软件包<br>yum info nginx       - 查看名为nginx的软件包相关信息<br>yum list installed   - 查看已经安装的软件包</p>
-<p>service nginx start</p>
-<p>systemctl start nginx     - 启动Nginx<br>systemctl restart nginx - 重启Nginx<br>systemctl stop nginx     - 停止Nginx<br>systemctl status nginx  - 查看Nginx状态<br>systemctl enable nginx  - 设置Nginx开机自启<br>systemctl disable nginx - 禁用Nginx开机自启”</p>
+<p>service nginx start<br>systemctl start nginx     - 启动Nginx<br>systemctl restart nginx - 重启Nginx<br>systemctl stop nginx     - 停止Nginx<br>systemctl status nginx  - 查看Nginx状态<br>systemctl enable nginx  - 设置Nginx开机自启<br>systemctl disable nginx - 禁用Nginx开机自启”</p>
 <h3 id="SFTP常用命令"><a href="#SFTP常用命令" class="headerlink" title="SFTP常用命令"></a>SFTP常用命令</h3><p>“quit / exit / bye - 退出sftp<br>cd / lcd - 切换远端工作目录 / 切换本地工作目录<br>pwd / lpwd - 查看远端工作目录 / 查看本地工作目录<br>ls / lls - 查看远端目录下的内容 / 查看本地目录下的内容<br>mkdir / lmkdir - 在远端创建目录 / 在本地创建目录<br>put - 上传文件（-r递归可以用来上传文件夹）<br>get - 下载文件（-r递归可以用来下载文件夹）</p>
 <p>alias - 给命令改名字 列：rm = w    rm = rm -f<br>unalias - 恢复原来的名字以及功能  列： unalias rm</p>
 <p>重定向:</p>
