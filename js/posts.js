@@ -1,1 +1,1 @@
-[{"title":"","date":"2018.11.29","uri":"2018/11/29/Python_Idiom/","excerpt":""}]
+[{"title":"","date":"2019.01.03","uri":"2019/01/03/Django/","excerpt":""},{"title":"","date":"2018.11.29","uri":"2018/11/29/Python_Idiom/","excerpt":""},{"title":"","date":"2019.01.03","uri":"2019/01/03/flask/","excerpt":""}]
